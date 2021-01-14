@@ -38,8 +38,9 @@ blockquote, q {
   blockquote:before, blockquote:after, q:before, q:after {
     content: '';
     content: none; }
+    
 /*Added a tab css style */
-.tab { margin-left: 40px; }
+.tab { margin-left: 35px; }
 
 table {
   border-collapse: collapse;

@@ -38,6 +38,8 @@ blockquote, q {
   blockquote:before, blockquote:after, q:before, q:after {
     content: '';
     content: none; }
+/*Added a tab css style */
+.tab { margin-left: 40px; }
 
 table {
   border-collapse: collapse;

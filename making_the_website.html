@@ -53,90 +53,102 @@
 									
 										<h4>GitHub</h4>
 										<p>GitHub, Inc. is provider of Internet hosting for software development and version control using Git. It offers the distributed version control and source code management (SCM) functionality of Git, plus its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, continuous integration and wikis for every project.</p>
-									
-										<h2 id="Modifications">Modifications made to the code from HTML5 UP</h2> 
-										<p>I started by modifying the text on the website and replaced a few images. I wanted to replace the icons on the website with my own images but when I did that the margin was all wrong, to solve this I created a CSS style I call ".tab". The code for the CSS style is as follows:</p>
-										<pre><code>
-		.tab { margin-left: 35px; }
-</code></pre>
-										<p>To implement the style I just wrote:</p>
-										<pre><code>
-		&lt;div class="tab"&gt;
-			&lt;h3&gt;header&lt;/h3&gt;
-			&lt;p&gt;text to write&lt;/p&gt;
-		&lt;/div&gt;
-</code></pre>
-										<p>The result was:</p>
-										<span class="image object">
-											<!-- image of the resulting tab style-->
-											<img src="images/css.png" alt="" />
-										</span>
+										<article>
+											<h2 id="Modifications">Modifications made to the code from HTML5 UP</h2> 
+											<p>I started by modifying the text on the website and replaced a few images. I wanted to replace the icons on the website with my own images but when I did that the margin was all wrong, to solve this I created a CSS style I call ".tab". The code for the CSS style is as follows:</p>
+											<div class="row.aln-left">
+												<pre><code>
+.tab { margin-left: 35px; }
+												</code></pre>
+											</div>
 
-										<p>When writing the resume page I wanted to have a right and left aligned text on the same line. For that you set the style in the &lt;p style = "style to choose"&gt;text&lt;/p&gt; sextion. I used the following implementation: </p>
-										<pre><code>
-		&lt;p style="text-align:left;"&gt;
-			<!-- <b> is for bold text -->
-			&lt;b&gt;
-			Communication system design and data collection
-			&lt;/b&gt;
-			<!-- span is used to create another style inside the paragraph -->
-			&lt;span style="float:right;"&gt;
-				June 2020 - Present 
-			&lt;/span&gt;
-		&lt;/p&gt;					
-</code></pre>
-										<p>In addition I also wanted to undeline the header for each seaction. For that I created another CSS style. The code for the CSS style is:</p>
-										
-										<pre><code>
-		.underline{
-			border-bottom: 1px solid rgb(0, 0, 0);
-			width: 100%;
-			display: block;
-			}				
-</code></pre>
-										<p>To implement the style I wrote:</p>
-										<pre><code>
-		&lt;span class = "underline"&gt;	
-			&lt;h2 style="margin-bottom:0;"&gt;	
-				Experience
-			&lt;/h2&gt;	
-		&lt;/span&gt;				
-</code></pre>
-										<p>After finishing the resume page and the "Making of this website" page I continued to make minor modifications and when I was happy with the result I used Git bash to puplish the website. The procedure is as follows:</p>
-										<p>It is important to note that I use Ubuntu so the installing procedure and commands might be different from your own OS. Please check the official instructions for installing Git bash on your machine.</p>
-										<ol>
-											<li>Download and install Git.</li>
-											<li>Open a terminal and navigate to the folder where your project is located.</li>
+											<p>To implement the style I just wrote:</p>
+											<div class="row.aln-left">
+												<pre><code>
+&lt;div class="tab"&gt;
+	&lt;h3&gt;header&lt;/h3&gt;
+	&lt;p&gt;text to write&lt;/p&gt;
+&lt;/div&gt;
+												</code></pre>
+											</div>
+											
+											<p>The result was:</p>
 											<span class="image object">
-												<!-- image of the navigation in terminal-->
-												<img src="images/navigate.png" alt="" />
-											</span>	
-											<li>In the terminal, type <code>git init</code> and press enter to initialize an empty Git repository.</li>
-											<li>Type <code>git add .</code> and press enter to add the files to Git.</li>
-											<li>Type <code>git config --global user.email "your-address@example.com"</code> and press enter.</li>
-											<li>Type <code>git config --global user.name "YOUR_USERNAME"</code> and press enter.</li>
-											<span class="image object">
-												<!-- image of the terminal commands-->
-												<img src="images/initrepo.png" alt="" />
-											</span>	
-											<li>Type <code>git commit -m "first commit"</code> to add your first commit. </li>
-											<span class="image object">
-												<!-- image of the result-->
-												<img src="images/commit.png" alt="" />
+												<!-- image of the resulting tab style-->
+												<img src="images/css.png" alt="" width ="90%" />
 											</span>
-											<li>Go to your Github page and copy the link to the repository. Then type <code>git remote add origin "your link here" </code>.</li>									
-											<li>Type <code>git push</code> to push changes to your repository. You will be prompted to sign into your GitHub account.</li>								
-											<span class="image object">
-												<!-- image of the result-->
-												<img src="images/push.png" alt="" />
-											</span>
-											<li>Change the repository link to a name of your choosing.</li>								
-										</ol>
 
-										<p>Now for the most important part, enjoy the fruits of your labor.</p>
+											<p>When writing the resume page I wanted to have a right and left aligned text on the same line. For that you set the style in the &lt;p style = "style to choose"&gt;text&lt;/p&gt; sextion. I used the following implementation: </p>
+											<div class="row.aln-left">
+												<pre><code>
+&lt;p style="text-align:left;"&gt;
+	<!-- <b> is for bold text -->
+	&lt;b&gt;
+	Communication system design and data collection
+	&lt;/b&gt;
+	<!-- span is used to create another style inside the paragraph -->
+	&lt;span style="float:right;"&gt;
+		June 2020 - Present 
+	&lt;/span&gt;
+&lt;/p&gt;					
+												</code></pre>
+											</div>
+											
+											<p>In addition I also wanted to undeline the header for each seaction. For that I created another CSS style. The code for the CSS style is:</p>
+											<div class="row.aln-left">
+												<pre><code>
+.underline{
+	border-bottom: 1px solid rgb(0, 0, 0);
+	width: 100%;
+	display: block;
+	}				
+												</code></pre>
+											</div>
+											<p>To implement the style I wrote:</p>
+											<div class="row.aln-left">
+												<pre><code>
+&lt;span class = "underline"&gt;	
+	&lt;h2 style="margin-bottom:0;"&gt;	
+		Experience
+	&lt;/h2&gt;	
+&lt;/span&gt;				
+												</code></pre>
+											</div>
+											<p>After finishing the resume page and the "Making of this website" page I continued to make minor modifications and when I was happy with the result I used Git bash to puplish the website. The procedure is as follows:</p>
+											<p>It is important to note that I use Ubuntu so the installing procedure and commands might be different from your own OS. Please check the official instructions for installing Git bash on your machine.</p>
+											<ol >
+												<li>Download and install Git.</li>
+												<li>Open a terminal and navigate to the folder where your project is located.</li>
+												<span class="image object">
+													<!-- image of the navigation in terminal-->
+													<img src="images/navigate.png" alt="" />
+												</span>	
+												<li>In the terminal, type <code>git init</code> and press enter to initialize an empty Git repository.</li>
+												<li>Type <code>git add .</code> and press enter to add the files to Git.</li>
+												<li>Type <code>git config --global user.email "your-address@example.com"</code> and press enter.</li>
+												<li>Type <code>git config --global user.name "YOUR_USERNAME"</code> and press enter.</li>
+												<span class="image object">
+													<!-- image of the terminal commands-->
+													<img src="images/initrepo.png" alt="" />
+												</span>	
+												<li>Type <code>git commit -m "first commit"</code> to add your first commit. </li>
+												<span class="image object">
+													<!-- image of the result-->
+													<img src="images/commit.png" alt="" />
+												</span>
+												<li>Go to your Github page and copy the link to the repository. Then type <code>git remote add origin "your link here" </code>.</li>									
+												<li>Type <code>git push</code> to push changes to your repository. You will be prompted to sign into your GitHub account.</li>								
+												<span class="image object">
+													<!-- image of the result-->
+													<img src="images/push.png" alt="" />
+												</span>
+												<li>Change the repository link to a name of your choosing.</li>								
+											</ol>
 
-										<p>The code in its entirety can be found in <a href="https://github.com/JoelInga/JoelInga.github.io">Github repository</a></p>
-									
+											<p>Now for the most important part, enjoy the fruits of your labor.</p>
+
+											<p>The code in its entirety can be found in <a href="https://github.com/JoelInga/JoelInga.github.io">Github repository</a></p>
+										</article>
 							
 								</section>	
 						</div>

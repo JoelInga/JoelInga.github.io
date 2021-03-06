@@ -308,8 +308,25 @@
 												<img src="images/myndir-verk2/42-dxfexport.JPG" alt="" width ="90%" />
 											</span>
 										
-										
+											<h4>18. Preparing the file for laser cutting</h4>
+											<p>After the DXF file has been exported from Fusion 360, the files has to be imported into Inkscape.
+												 There the line thickness can set correctly, the model can be arranged to limit blank spaces and 
+												the file can be exported as a pdf document for the laser cutter.</p>
+
+											The final result of the pdf file is: 
+											<div id="laser_cut_project" style="width: 90%;"></div>
+											<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+											<script type="text/javascript">
+												document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+													var adobeDCView = new AdobeDC.View({clientId: "45eee2c503e24f62bd42d8bb4a219874", divId: "laser_cut_project"});
+													adobeDCView.previewFile({
+														content:{location: {url: "assets/boxjoel.pdf"}},
+														metaData:{fileName: "laser_box.pdf"}
+													}, {embedMode: "IN_LINE"});
+												});
+											</script>
 											<p> </p>
+
 											<p>The model in its entirety can be found in <a href="https://github.com/JoelInga/JoelInga.github.io/blob/main/assets/skuffa%20v30.f3d">Github link to model</a>.</p>
 										</article>
 

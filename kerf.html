@@ -34,7 +34,7 @@
 										<h2 id="prep">Making the test model.</h2>
 										<p>The model was very simple, a 100mm X 40mm box divided into 17 parts. </p>
 										The final result of the pdf file is: 
-										<div id="kerfestimation" style="width: 90%;"></div>
+										<div id="kerfestimation" style="height: 50%; width: 50%;"></div>
 										<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
 										<script type="text/javascript">
 											document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
@@ -42,7 +42,7 @@
 												adobeDCView.previewFile({
 													content:{location: {url: "images/myndir-verk2/kerf.pdf"}},
 													metaData:{fileName: "kerf.pdf"}
-												}, {embedMode: "IN_LINE"});
+												}, {embedMode: "SIZED_CONTAINER", dockPageControls: false});
 											});
 										</script>
 										<p> </p>

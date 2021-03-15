@@ -23,44 +23,48 @@
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<h1>Project 2 - Kerf estimation</h1>
+										<h1>Project 3 - 3D print parameters estimation</h1>
 									</header>
 
 										<!-- Content -->
 										<h2 id="objective">The objective</h2>
-										<p>The objective of this  group project was to estimate the kerf af a laser cutter using material tests. </p>
+										<p>The objective of this  group project was to estimate the limitation of a 3D printer. </p>
 
 										<p> </p>
-										<h2 id="prep">Making the test model.</h2>
-										<p>The model was very simple, a 100mm X 40mm box divided into 17 parts. </p>
+										<h2 id="prep">The test model</h2>
+										<p>The model we used is from  <a href="https://www.thingiverse.com/thing:2975429"> here</a>.</p>
+                                        <p>Here is the model in Cura with the recomended parameters:</p>
 										<span class="image object">
 											<!-- image of the resulting parameters-->
-											<img src="images/myndir-verk2/kerf.JPG" alt="The cut out model." width ="60%" />
+											<img src="images/myndir-verk3/test.png" alt="The cut out model." width ="60%" />
 										</span>
-										The final result of the pdf file is: 
-										<div id="kerfestimation" style="width: 50%;"></div>
-										<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-										<script type="text/javascript">
-											document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
-												var adobeDCView = new AdobeDC.View({clientId: "000ed92c827748e2ac11a916e491d945", divId: "kerfestimation"});
-												adobeDCView.previewFile({
-													content:{location: {url: "images/myndir-verk2/kerf.pdf"}},
-													metaData:{fileName: "kerf.pdf"}
-												}, {embedMode: "IN_LINE", dockPageControls: false});
-											});
-										</script>
-										
+									
+										<p>We followed the recomended settings from the maker of the model and the result was:</p>
+                                        <div class="features">
+                                            <article>
+                                                <span class="image object"></span>
+                                                    <!-- Custom image of the university-->
+                                                    <img src="images/myndir-verk3/test1.jpg" alt="" width="70%" />
+                                            </article>
+                                            <article>
+                                                <span class="image object"></span>
+                                                    <!-- Custom image of the university-->
+                                                    <img src="images/myndir-verk3/test2.jpg" alt="" width="70%" />
+                                            </article>
+                                            <article>
+                                                <span class="image object"></span>
+                                                    <!-- Custom image of the university-->
+                                                    <img src="images/myndir-verk3/test3.jpg" alt="" width="70%" />
+                                            </article>
+                                            <article>
+                                                <span class="image object"></span>
+                                                    <!-- Custom image of the university-->
+                                                    <img src="images/myndir-verk3/test4.jpg" alt="" width="70%" />
+                                            </article>
+                                        </div>
 										<p> </p>
-										<h2 id="cut">Calculating the kerf</h2>
-										<p> 
-										After the model is cut, one piece is taken out and a calliper is used to measure the gap formed.
-										Then the piece we took out earlier is measured as well and since the number of lines is 18 (17 parts) the kerf is calculated as: (gap-width of one piece)/18. The kerf was estimated to be around 0.16mm.
-										</p>
-										<p> </p>
-										<span class="image object">
-											<!-- image of the resulting parameters-->
-											<img src="images/myndir-verk2/kerf.jpg" alt="The cut out model." width ="60%" />
-										</span>
+                                        <p>The result was that support was needed for overhangs over 40<span>&#176;</span> and we tried to minimize small details in our models </p>
+
 								</section>
 						</div>
 					</div>
@@ -83,6 +87,8 @@
 												<li><a href="making_the_website.html">The making of this website</a></li>
 												<li><a href="laser_press_fit.html">Laser cutting a press fit model</a></li>
 												<li><a href="kerf.html">Kerf estimation</a></li>
+												<li><a href="using_3d.html">3D printin and 3D scanning</a></li>
+												<li><a href="3dtest.html">3D print parameters estimation</a></li>
 												<!-- this is the formating
 												<li><a href="#">Ipsum Adipiscing</a></li>
 												<li><a href="#">Tempus Magna</a></li>

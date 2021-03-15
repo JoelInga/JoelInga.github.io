@@ -1,0 +1,332 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>3D printing and scanning</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>Homepage</strong></a>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h1>Project 3 - 3D printin and 3D scanning</h1>
+									</header>
+
+										<!-- Content -->
+										<h2 id="objective">The objective</h2>
+										<p>The objective of this project was to make a 3D model of an object that could not be
+										produced using subtractive manufacturing methods. Printing the object, with the maximum weight being 100g of plastic according to the slicer software.
+										3D scanning an object using photogrammetry.</p>
+
+
+										<h2 id="prep">Preperation</h2>
+
+										<p>My experience using Fusion 360 has grown from the work I did in <a href="laser_press_fit.html">project 2</a> and I was quite familiar with the process.</p>
+										<h3>Software and tools:</h3>
+										<ul>
+											<li>Fusion 360: <a href="https://www.autodesk.com/products/fusion-360/overview?term=1-YEAR&support=null">link</a>.</li>
+											<li>Cura: <a href="https://ultimaker.com/software/ultimaker-cura">link</a>.</li>
+										</ul>
+										<h4>Fusion 360</h4>
+										<p>Fusion 360 is a cloud-based CAD/CAM tool for collaborative product development.</p>
+
+										<h4>Cura</h4>
+										<p>Cura is an open source slicing application for 3D printers.</p>
+
+
+
+										<h2 id="insp">Inspiration</h2>
+										<p>I drew inspiration from the IKEA BEVARA from <a href="https://www.ikea.com/us/en/p/bevara-sealing-clip-set-of-30-mixed-colors-mixed-sizes-10339171/"> here</a>. It is simple and useful tool to use in the kitchen. I was running low on my own sealing clips and decided to make my own.</p>
+											<p>The inspiration</p>
+											<span class="image object">
+												<!-- image of the resulting tab style-->
+												<img src="images/myndir-verk3/bevara.webp" alt="" width ="90%" />
+											</span>
+
+
+										<p>  </p>
+										<p>  </p>
+										<p>  </p>
+										<p> </p>
+										<p> </p>
+										<p> </p>
+
+										<article>
+											<h2 id="design">The design of the model.</h2>
+											<h4>1. Defining parameters</h4>
+											<p> I started by making all the parameters I needed.</p>
+
+											<p>The parameters are as defined:</p>
+											<span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk3/2-parametrar.JPG" alt="" width ="90%" />
+											</span>
+
+											<h4>2. Drawing the first hinge</h4>
+											<p>I started the actual design by drawing a sketch of the bottom and defining width and length by my parameters.</p>
+											<p>The sketch:</p>
+											<span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk3/3-fyrstadrawing.JPG" alt="" width ="90%" />
+											</span>
+											<h4>3. Extruding the first hinge</h4>
+											<p> The sketch made previously was then extruded and the length of the extrusion defined by the "þykkt" parameter.</p>
+											<span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk3/4-extrude.JPG" alt="" width ="90%" />
+											</span>
+											<h4>4. Making the closer</h4>
+											<p>I drew a sketch of the "closer" that catches the other hinge and lockes it in.</p>
+											<span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk3/5-handle.JPG" alt="" width ="90%" />
+											</span>
+											<p> I then extruded the closer.</p>
+											<span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk3/6-extrudehandle.JPG" alt="" width ="90%" />
+											</span>
+											<p>After extruding the closer, I cut out a part of it to allow bending.</p>
+											<span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk3/7-leverage.JPG" alt="" width ="90%" />
+											</span>
+											<h4>5. Making the rotating enclosure </h4>
+											<p>I made a sketch to add a cylinder that encloses another cylinder that will be attatched to the other hinge.</p>
+											<span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk3/8-swing.JPG" alt="" width ="90%" />
+											</span>
+											<p>I then extruded the outer cylinder and combined it with the existing handle.</p>
+											<span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk3/9-extrudeswing.JPG" alt="" width ="90%" />
+											</span>
+											<p>After that I extruded the inner cylinder as a seperate body.</p>
+											<span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk3/10-swindle.JPG" alt="" width ="90%" />
+											</span>
+											<h4>6. cutting out of the cylinder</h4>
+											<p>To cut the inner part of the outer cylinder out I first created a sketch with the dimensions of the hole I wanted to cut out.</p>
+
+											<span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk3/11-swing.JPG" alt="" width ="90%" />
+											</span>
+											<p>I then used the revolve tool in Fusion 360 to cut out the parts of the outer cylinder that I did not want.</p>
+
+											<span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk3/12-rotate.JPG" alt="" width ="90%" />
+											</span>
+											<h4>7. Making the triangle groove</h4>
+											<p>To make the triangular groove I started by drawing a sketch of a simple triangle.</p>
+											<span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk3/13-triangleinn.JPG" alt="" width ="90%" />
+											</span>
+											<p>I then extruded the sketch in one direction using the "lengd" parameter.</p>
+											<span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk3/14-extrudetriangle.JPG" alt="" width ="90%" />
+											</span>
+											<p>And then in the other direction.</p>
+											<span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk3/15-triangleotherside.JPG" alt="" width ="90%" />
+											</span>
+											<h4>8. Making the second hinge</h4>
+											<p>To make the second hinge I made a sketch that matched with the first hinge.</p>
+											<span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk3/16-other.JPG" alt="" width ="90%" />
+											</span>
+											<p>I then extruded the sketch and joined it to the inner cylinder.</p>
+											<span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk3/17-extother.JPG" alt="" width ="90%" />
+											</span>
+											<h4>9. Using combine to make the fingers match with the bottom plate </h4>
+											<p>Using the combine feature and the "keep tools" option I made the fingers in the side panels automatically match with the fingers on the bottom plate.</p>
+											<span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk2/11-hliðarplatacombine.JPG" alt="" width ="90%" />
+											</span>
+											<h4>10. Fixing the rotation</h4>
+											<p>The parts are now interfereing with each other at the cylinder intersection so I drew a sketch to define the faces I wanted to cut.</p>
+											<span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk3/18-prep.JPG" alt="" width ="90%" />
+											</span>
+											<p>I then extruded the part of the second hinge that was interfering.</p>
+											<span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk3/19-extr.JPG" alt="" width ="90%" />
+											</span>
+											<p>There were still two more parts that needed to be cut in order for the rotating cylinder enclosure to work so I cut them.</p>
+											<span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk3/20-meiraprep.JPG" alt="" width ="90%" />
+											</span>
+											<span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk3/21-otherside.JPG" alt="" width ="90%" />
+											</span>
+											<p>There was still a small part left behind so I cut that out.</p>
+											<span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk3/22-fix.JPG" alt="" width ="90%" />
+											</span>
+											<h4>11. Drawing the second triangle groove</h4>
+											<p>To draw the second triangle groove I made a similar sketch to the first groove. </p>
+											<span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk3/23-othertriangle.JPG" alt="" width ="90%" />
+											</span>
+											<p>I then extruded the sketch.</p>
+											<span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk3/24-extrudethe3.JPG" alt="" width ="90%" />
+											</span>
+											<h4>12. Rotating the model</h4>
+											<p>To make sure the slicing software does not accidentally combine the two hinges I rotated the second hinge.</p>
+											<span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk3/25-move.JPG" alt="" width ="90%" />
+											</span>
+											<h4>13. Exporting the stl file</h4>
+											<p>In order to make the file ready for the Cure slicing software I exported the model as a stl file. </p>
+											<span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk3/26-exportstl.JPG" alt="" width ="90%" />
+											</span>
+											
+										
+											<h4>13. Preparing the file for 3d printing</h4>
+											<p>Before I adjusted the parameters in the slicing software Cure I printed a test file, 
+											 the test is explained <a href="3dtest.html"> here</a>.
+											</p>
+											<h4>14. Adjusting the 3D printing parameters</h4>
+											<p>The printer used is the Ultimaker 2 Extended+, and the material used is ABS silver 2.85mm from Innofil3D.</p>
+											<p>The parameters are:</p>
+											<span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk3/parametrar.png" alt="" width ="90%" />
+											</span>
+											<p>The material:</p>
+											<span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk3/material.jpg" alt="" width ="90%" />
+											</span>
+											<p>The 3D printer:</p>
+											<span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk3/prentarinn.jpg" alt="" width ="90%" />
+											</span>
+											<h4>15. 3D printing</h4>
+											<p>The gcode was exported to an sd card and put into the printer. The temperature of the Nozzle was 250<span>&#176;</span>C and 
+											the build plate temperature was 110<span>&#176;</span>C </p>
+											<p> </p>
+											<h4>16. The completed model</h4>
+											<p>The clip turned out very nice and after removing the support it looks good.</p>
+											<p> </p>
+											<div class="features">
+												<article>
+													<span class="image object"></span>
+														<!-- Custom image of the university-->
+														<img src="images/myndir-verk3/onlybagclip.jpg" alt="" width="80%" height="80%"/>
+												</article>
+												<article>
+													<span class="image object"></span>
+														<!-- Custom image of the university-->
+														<img src="images/myndir-verk3/onlybagclip2.jpg" alt="" width="80%" height="80%"/>
+												</article>
+												<article>
+													<span class="image object"></span>
+														<!-- Custom image of the university-->
+														<img src="images/myndir-verk3/bagclip.jpg" alt="" width="80%" height="80%"/>
+												</article>
+											</div>
+								
+											<p>The model in its entirety can be found in <a href="https://github.com/JoelInga/JoelInga.github.io/blob/main/assets/skuffa%20v30.f3d">Github link to model</a>.</p>
+										</article>
+
+								</section>
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Homepage</a></li>
+										<li><a href="resume.html">Resume</a></li>
+										<li>
+											<span class="opener">Projects</span>
+											<ul>
+												<!-- special html file for each project-->
+												<li><a href="making_the_website.html">The making of this website</a></li>
+												<li><a href="laser_press_fit.html">Laser cutting a press fit model</a></li>
+												<li><a href="kerf.html">Kerf estimation</a></li>
+												<!-- this is the formating
+												<li><a href="#">Ipsum Adipiscing</a></li>
+												<li><a href="#">Tempus Magna</a></li>
+												<li><a href="#">Feugiat Veroeros</a></li>
+												-->
+											</ul>
+										</li>
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									<p>If any questions arise feel free to contact me.</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="#">joel.ingason@gmail.com</a></li>
+										<li class="icon solid fa-envelope"><a href="#">joi12@hi.is</a></li>
+									</ul>
+								</section>
+
+							<!-- Footer
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Demo Images: <a href="https://unsplash.com">Unsplash</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+							-->
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

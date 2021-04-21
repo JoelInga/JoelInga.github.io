@@ -53,32 +53,41 @@
 
 										<article>
 											<h2 id="design">The design of the model.</h2>
-											<h4>1. Defining parameters</h4>
-											<p> We started by making all the parameters we needed.</p>
+											<h4>1. Designing the model</h4>
+											<p> Another member of the group,<a href="https://isakernir1.github.io/framleidsluferli/">Ísak Ernir Sveinbjörnsson</a>, designed the 3D model. You can find the procedure on his website. </p>
 
-											<p>The parameters are as defined:</p>
+											<h4>2. Making the inital setup. </h4>
+											<p>We started by defining  the orientation of the model, selecting the proper operation type (milling) and picking the axis of the 3D model.</p>
+											<p>The inital setup</p>
 											<span class="image object">
 												<!-- image of the resulting parameters-->
-												<img src="images/myndir-verk4/1-parametrar.JPG" alt="" width ="90%" />
+												<img src="images/myndir-verk5/orientation2.JPG" alt="" width ="90%" />
 											</span>
-
-											<h4>2. Drawing the first part</h4>
-											<p>We started the actual design by drawing a sketch of the side panel using the parameters we defined.</p>
-											<p>The sketch:</p>
+											<p>We then proceded to set to mode in the stock section to "Relative size box" and the stock offset mode to "No additional stock".</p>
 											<span class="image object">
 												<!-- image of the resulting parameters-->
-												<img src="images/myndir-verk4/2-fyrsti.JPG" alt="" width ="90%" />
+												<img src="images/myndir-verk5/orientation3.JPG" alt="" width ="90%" />
 											</span>
-											<h4>3. Extruding the first part and making a slot.</h4>
-											<p> The sketch made previously was then extruded with the "Þykkt" parameter and a slot was drawn onto the face of the object.</p>
+											<p>The result being:</p>
 											<span class="image object">
 												<!-- image of the resulting parameters-->
-												<img src="images/myndir-verk4/3-side_hola.JPG" alt="" width ="90%" />
+												<img src="images/myndir-verk5/orientations.JPG" alt="" width ="90%" />
 											</span>
-                                            <p>We then used a box pattern to repeate the extrusion of the slot on the other side of the panel.</p>
-                                            <span class="image object">
+											<h4>3. Defining the roughing toolpath</h4>
+											<p> The first toolpath to be defined is the roughing toolpath that carves out a rough representation of the model. We used a stock 2mm diameter tip and left the Feed & Speed settings at default values.</p>
+											<span class="image object">
 												<!-- image of the resulting parameters-->
-												<img src="images/myndir-verk4/4-side_seinnihola.JPG" alt="" width ="90%" />
+												<img src="images/myndir-verk5/2dPSettings1.JPG" alt="" width ="90%" />
+											</span>
+											<p>We then defined the geometry that represents the model. This took a lot of trial and error to get right since it is very important to only select the faces of the object you wish to cut out and the order of the selection is the order in which it is cut out.</p>
+                                             <span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk5/2dPSettings2.JPG" alt="" width ="90%" />
+											</span>
+											<p>Fusion 360 then calculated the toolpaths for us.</p>
+                                             <span class="image object">
+												<!-- image of the resulting parameters-->
+												<img src="images/myndir-verk5/2dPocket.JPG" alt="" width ="90%" />
 											</span>
 											<h4>4. Making a slanted slot.</h4>
 											<p>We drew a sketch of a slanted slot, with a slant of "halli" degrees onto the face of the panel. This is the slot that the feet of the stool will slide into.</p>
